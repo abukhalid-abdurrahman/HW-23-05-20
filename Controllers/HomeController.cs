@@ -23,6 +23,19 @@ namespace Practics.Controllers
             return View();
         }
 
+        public IActionResult Search()
+        {
+            return View(null);
+        }
+
+        [HttpPost]
+        public IActionResult Search(PersonViewModel person)
+        {
+            if(string.IsNullOrEmpty(person.LastName) || string.IsNullOrEmpty(person.FirstName) || string.IsNullOrEmpty(person.MiddleName))
+                return View(null);
+            return View(new ModelRepository<PersonViewModel>("Person").SelectByParam($"LastName = '{person.LastName}' and FirstName = '{person.FirstName}' and MiddleName = '{person.MiddleName}'"));
+        }
+
         [HttpGet]
         public IActionResult Selection(int? id)
         {

@@ -20521,6 +20521,11 @@
   "RootNamespace": "Practics",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Faridun\\Allif Academy\\Day 26\\Practics\\Views\\Home\\Search.cshtml",
+      "TargetPath": "Views\\Home\\Search.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Faridun\\Allif Academy\\Day 26\\Practics\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

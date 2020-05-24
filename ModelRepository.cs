@@ -24,7 +24,6 @@ namespace Practics
             }
             return model;
         }
-
         public T SelectById(int? Id)
         {
             T model;
@@ -32,6 +31,16 @@ namespace Practics
             {
                 string sqlQuery = $"select * from {tableName} where Id = @Id";
                 model = db.Query<T>(sqlQuery, new { Id }).FirstOrDefault();
+            }
+            return model;
+        }
+        public T SelectByParam(string param)
+        {
+            T model;
+            using (IDbConnection db = new SqlConnection(connectionString))
+            {
+                string sqlQuery = $"select * from {tableName} where {param}";
+                model = db.Query<T>(sqlQuery).FirstOrDefault();
             }
             return model;
         }
