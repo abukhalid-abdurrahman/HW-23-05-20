@@ -1,6 +1,6 @@
 ﻿@model IEnumerable<PersonViewModel>
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Главная";
 }
 <h3 style="display: block;">Персонал</h3>
 <hr>
@@ -13,7 +13,7 @@
         @foreach (var person in Model)
         {
             <tr>
-                <td><a href="~/Home/Person/@person.LastName">@person.LastName</a></td>
+                <td><a href="~/Home/Person/@person.Id">@person.LastName</a></td>
                 <td>@person.FirstName</td>
                 <td>@person.MiddleName</td>
             </tr>

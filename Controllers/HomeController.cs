@@ -17,5 +17,17 @@ namespace Practics.Controllers
         {
             return View(new ModelRepository<PersonViewModel>("Person").Read());
         }
+
+        public IActionResult Person()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Person(PersonViewModel person)
+        {
+            new ModelRepository<PersonViewModel>("Person").Create(person, "LastName, FirstName, MiddleName", "@LastName, @FirstName, @MiddleName");
+            return View();
+        }
     }
 }
