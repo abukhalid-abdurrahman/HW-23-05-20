@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PersonViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h3 style="display: block;">Персонал</h3>
+<hr>
+<table class="table-condensed" style="display: block;">
+	<tr>
+		<td>Имя</td>
+		<td>Фамилия</td>
+		<td>Отчество</td>
+	</tr>
+        @foreach (var person in Model)
+        {
+            <tr>
+                <td><a href="~/Home/Person/@person.LastName">@person.LastName</a></td>
+                <td>@person.FirstName</td>
+                <td>@person.MiddleName</td>
+            </tr>
+        }
+</table>

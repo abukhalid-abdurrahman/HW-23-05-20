@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Practics</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="~/Home/Index" class="navbar-brand">Главная</a>
+                        <a href="~/Home/Person" class="navbar-brand">Добавить</a>
+                        <a href="~/Home/Search" class="navbar-brand">Поиск</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+    @RenderBody()
+    <hr>
+        <footer style="display: block;">
+            <p>© 2020 - Faha Industries. All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
