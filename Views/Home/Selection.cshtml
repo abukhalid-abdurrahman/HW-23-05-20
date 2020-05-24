@@ -1,0 +1,7 @@
+@model PersonViewModel
+@{
+    ViewData["Title"] = Model.LastName;
+}
+<h3>Сотрудник: @Model.LastName</h3>
+<h3>Фамилия: @Model.FirstName</h3>
+<h3>Отчество: @Model.MiddleName</h3>

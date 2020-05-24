@@ -43,3 +43,4 @@ C:\Users\Faridun\Allif Academy\Day 26\Practics\obj\Debug\netcoreapp3.1\Practics.
 C:\Users\Faridun\Allif Academy\Day 26\Practics\obj\Debug\netcoreapp3.1\Practics.pdb
 C:\Users\Faridun\Allif Academy\Day 26\Practics\obj\Debug\netcoreapp3.1\Practics.genruntimeconfig.cache
 C:\Users\Faridun\Allif Academy\Day 26\Practics\obj\Debug\netcoreapp3.1\Razor\Views\Home\Person.cshtml.g.cs
+C:\Users\Faridun\Allif Academy\Day 26\Practics\obj\Debug\netcoreapp3.1\Razor\Views\Home\Selection.cshtml.g.cs

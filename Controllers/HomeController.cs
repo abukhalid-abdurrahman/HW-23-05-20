@@ -23,6 +23,14 @@ namespace Practics.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Selection(int? id)
+        {
+            if(id == null)
+                return RedirectToAction("Index");
+            return View(new ModelRepository<PersonViewModel>("Person").SelectById(id));
+        }
+
         [HttpPost]
         public IActionResult Person(PersonViewModel person)
         {

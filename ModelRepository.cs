@@ -24,6 +24,17 @@ namespace Practics
             }
             return model;
         }
+
+        public T SelectById(int? Id)
+        {
+            T model;
+            using (IDbConnection db = new SqlConnection(connectionString))
+            {
+                string sqlQuery = $"select * from {tableName} where Id = @Id";
+                model = db.Query<T>(sqlQuery, new { Id }).FirstOrDefault();
+            }
+            return model;
+        }
         public int Create(T model, string columns, string values)
         {
             using (IDbConnection db = new SqlConnection(connectionString))

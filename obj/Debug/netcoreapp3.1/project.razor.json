@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Faridun\\Allif Academy\\Day 26\\Practics\\Views\\Home\\Selection.cshtml",
+      "TargetPath": "Views\\Home\\Selection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Faridun\\Allif Academy\\Day 26\\Practics\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
